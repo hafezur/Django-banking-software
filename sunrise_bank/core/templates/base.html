@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} {% endblock %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-fuchsia-500">
+    {% include "navbar.html" %}<!--   inherite na koreo ai vabe include kora jai. -->
+     <div>
+        {% block body %}
+          
+        {% endblock%}
+     </div>
+    
+    {% include "footer.html" %}
+</body>
+
+</html>
